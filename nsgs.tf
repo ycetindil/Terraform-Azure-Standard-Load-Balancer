@@ -4,7 +4,7 @@ resource "azurerm_network_security_group" "nsg" {
   resource_group_name = azurerm_resource_group.rg.name
 
   security_rule {
-    name                       = "Open SSH"
+    name                       = "OpenSSH"
     priority                   = 110
     direction                  = "Inbound"
     access                     = "Allow"
@@ -16,7 +16,7 @@ resource "azurerm_network_security_group" "nsg" {
   }
 
   security_rule {
-    name                       = "Open HTTP"
+    name                       = "OpenHTTP"
     priority                   = 120
     direction                  = "Inbound"
     access                     = "Allow"
